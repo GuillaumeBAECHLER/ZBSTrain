@@ -12,6 +12,9 @@ var ReservationSchema = new Schema({
     type: String,
     ref: 'Train'
   },
+  username: {
+    type: String
+  },
   numberPlaces: {
     type: Number
   }

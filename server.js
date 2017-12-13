@@ -8,7 +8,7 @@ var express = require('express'),
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/Traindb');
+mongoose.connect('mongodb://tsauvajon:huit@cluster0-shard-00-00-lbcnx.mongodb.net:27017,cluster0-shard-00-01-lbcnx.mongodb.net:27017,cluster0-shard-00-02-lbcnx.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin');
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -22,8 +22,6 @@ var reservationRoutes = require('./api/routes/reservationRoutes');
 trainRoutes(app);
 reservationRoutes(app);
 
-
 app.listen(port);
-
 
 console.log('ZBSTrain ' + port);
