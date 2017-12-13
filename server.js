@@ -5,6 +5,9 @@ var express = require('express'),
   Train = require('./api/models/trainModel'),
   Reservation = require('./api/models/reservationModel'),
   bodyParser = require('body-parser');
+var cors = require('cors');
+
+app.use(cors());
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
