@@ -28,7 +28,7 @@
 {
     "numReservation": "string",
     "username": "string",
-    "currentTrain": "string", // référence vers Train.numTrain
+    "currentTrain": "string", // => Train.numTrain
     "numberPlaces": "int"
 }
 ```
@@ -43,3 +43,8 @@
 - GET
 - PUT
 - DELETE
+
+## Clients
+
+- Back-Office : Gestion des trains : https://github.com/GuillaumeBAECHLER/ZBSTrain
+- Consultation des trains et réservation des places : https://github.com/tsauvajon/fraudeursdu34
